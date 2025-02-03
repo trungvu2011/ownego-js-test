@@ -12,7 +12,7 @@ const HomePage = () => {
     const [toppings, setToppings] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:8080/api/stores')
+        axios.get('/api/stores')
             .then((response) => {
                 setStores(response.data);
                 if (response.data.length > 0) {
@@ -23,7 +23,7 @@ const HomePage = () => {
     }, []);
 
     useEffect(() => {
-        axios.get('http://localhost:8080/api/toppings')
+        axios.get('/api/toppings')
             .then((response) => setToppings(response.data))
             .catch((error) => console.error("Error fetching toppings:", error));
     }, []);

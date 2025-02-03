@@ -6,7 +6,7 @@ const MenuCard = ({ store, sortBy, filterToppings }) => {
 
     useEffect(() => {
         if (store) {
-            axios.get(`http://localhost:8080/api/stores/${store.id}/menu`)
+            axios.get(`/api/stores/${store.id}/menu`)
                 .then((response) => {
                     let items = response.data.menu.map((item) => ({
                         ...item,
