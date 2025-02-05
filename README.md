@@ -3,25 +3,6 @@
 ## 🚀 Project Overview
 Đây là một ứng dụng web nhỏ giúp quản lý các quán trà sữa tại Nam Đồng. Ứng dụng hiển thị danh sách quán, menu các loại trà sữa và hỗ trợ lọc, sắp xếp theo các tiêu chí khác nhau.
 
-## 📂 Folder Structure
-```
-project-root/
-├── data/                 # Chứa dữ liệu JSON về các cửa hàng, sản phẩm, menu
-│   ├── products.json
-│   ├── storeProducts.json
-│   ├── stores.json
-├── src/                  # Source code chính
-│   ├── components/       # Chứa các component React
-│   ├── pages/            # Chứa các trang chính của ứng dụng
-│   ├── App.js            # Entry chính
-│   ├── index.js          # Render ứng dụng vào DOM
-├── server/               # Mock API server (Node.js + Express)
-│   ├── server.js         # Backend server API
-├── public/               # Assets tĩnh
-├── package.json          # Dependencies & Scripts
-├── README.md             # Hướng dẫn cài đặt và sử dụng
-```
-
 ## ✨ Features  
 ✅ Hiển thị danh sách quán trà sữa từ dữ liệu JSON.  
 ✅ Hiển thị menu đồ uống của từng cửa hàng.  
